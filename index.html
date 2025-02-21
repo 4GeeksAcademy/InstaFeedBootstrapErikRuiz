@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaFeedBootstrapErikRuiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <strong><i class="fab fa-instagram"></i> Instagram</strong>
+        <div>
+            <button class="btn" onclick="openModal()">Postear algo</button>
+            <div class="dropdown">
+                <i class="fas fa-cog"></i>
+                <div class="dropdown-content">
+                    <a href="#">Ajustes</a>
+                    <a href="#">Actividad</a>
+                    <a href="#">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid-toggle">
+        <i class="fas fa-th-large" onclick="setGrid(3)"></i>
+        <i class="fas fa-square" onclick="setGrid(1)"></i>
+    </div>
+    
+    <div class="grid-container grid-1" id="gallery">
+        <div class="post">
+            <div class="post-info">
+                <strong>Itukushima</strong>
+                <span>7 de Febrero de 2025</span>
+        <img src="https://es.japanspecialist.com/o/adaptive-media/image/580120/large/pk0003_key_miyajima_island_itsukushima_shrine.jpg?t=1636471857353" alt="Japón">
+        <div class="post-info">
+            <div class="likes"><i class="fas fa-heart"></i> 400 likes</div>
+        </div>
+        <p><strong>Fuke199131:</strong> Estuvimos visitando Japón, el templo de Itukushima.</p>
+    </div>
+    <div class="post">
+        <div class="post-info">
+            <strong>Cachorros</strong>
+            <span>12 de Febrero de 2025</span>
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-1007249-los-cachorros-de-perro-nacen-listos-para-interactuar-con-las-personas-encuentra-un-estudio.jpeg?q=w_1110,c_fill/f_webp" alt="Cachorros">
+        <div class="post-info">
+            <div class="likes"><i class="fas fa-heart"></i> 180 likes</div>
+        </div>
+        <p><strong>Fuke199131:</strong> Los cachorros de Labrador son increibles.</p>
+    </div>
+    <div class="post">
+        <div class="post-info">
+            <strong>Melbourne</strong>
+            <span>13 de Febrero de 2025</span>
+        <img src="https://www.cosasdearquitectos.com/wp-content/uploads/la-ciudad-de-20-minutos-o-el-plan-de-melbourne-para-crear-la-urbe-perfecta.jpg" alt="Ciudad">
+        <div class="post-info">
+            <div class="likes"><i class="fas fa-heart"></i> 200 likes</div>
+        </div>
+        <p><strong>Fuke199131:</strong> Visitamos Melbourne, increible ciudad.</p>
+    </div>
+    <div class="post">
+        <div class="post-info">
+            <strong>New York</strong>
+            <span>13 de Febrero de 2025</span>
+        <img src="https://viajes.nationalgeographic.com.es/medio/2025/01/16/rascacielos-de-nueva-york_39ebf54f_473804254_250116145354_1280x853.webp" alt="Nueva York">
+        <div class="post-info">
+            <div class="likes"><i class="fas fa-heart"></i> 170 likes</div>
+        </div>
+        <p><strong>Fuke199131:</strong> Ganas de visitar esta gran ciudad #NY.</p>
+    </div>
+    <div class="post">
+        <div class="post-info">
+            <strong>Antartida</strong>
+            <span>15 de Febrero de 2025</span>
+        <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/nationalgeographic_2696345.webp?w=1600&h=900" alt="Antartida">
+        <div class="post-info">
+            <div class="likes"><i class="fas fa-heart"></i> 50 likes</div>
+        </div>
+        <p><strong>Fuke199131:</strong> Uno de los lugares más inóspitos en el mundo.</p>
+    </div>
+    <div class="post">
+        <div class="post-info">
+            <strong>Videojuego</strong>
+            <span>17 de Febrero de 2025</span>
+        <img src="https://www.colegioceumonteprincipe.es/wp-content/uploads/consejos-videojuegos-820x500.jpg.webp" alt="Videojuego">
+        <div class="post-info">
+            <div class="likes"><i class="fas fa-heart"></i> 300 likes</div>
+        </div>
+        <p><strong>Fuke199131:</strong> Ganas de llegar a casa y desconectar jugando a un buen videojuego.</p>
+    </div>
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Crea un post</h2>
+            <textarea rows="4" placeholder="Postea algo..."></textarea>
+            <br>
+            <button class="btn">Postear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
