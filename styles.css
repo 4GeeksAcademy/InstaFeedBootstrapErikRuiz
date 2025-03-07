@@ -22,11 +22,13 @@ body {
     font-size: 20px;
     margin: 0 10px;
     cursor: pointer;
+    color: #4CAF50;
 }
 .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
     gap: 10px;
+    margin: 0 auto;
 }
 .grid-container img {
     width: 306px;
@@ -35,12 +37,14 @@ body {
 }
 .grid-1 {
     grid-template-columns: 1fr;
+    margin: 0 auto;
 }
 
 .grid-1 img {
-    width: 450px;
-    height: 400px;
+    width: 600px;
+    height: 650px;
     object-fit: cover;
+    align-content: center;
 }
 
 .grid-3 {
